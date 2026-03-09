@@ -71,3 +71,6 @@ logs/
 # APPWRITE LOCAL CONFIG
 # ===============================
 .appwrite/
+
+node_modules/
+package-lock.json
