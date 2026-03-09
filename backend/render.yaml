@@ -1,0 +1,18 @@
+services:
+  - type: web
+    name: landvault-api
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn main:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: DATABASE_URL
+        fromDatabase:
+          name: landvault-db
+          property: connectionString
+      - key: ENVIRONMENT
+        value: production
+
+databases:
+  - name: landvault-db
+    databaseName: landvault
+    user: landvault

@@ -1,0 +1,73 @@
+# ===============================
+# ENVIRONMENT VARIABLES
+# ===============================
+.env
+.env.*
+*.env
+
+# Firebase credentials
+firebase-service-account.json
+backend/firebase-service-account.json
+
+# Secrets
+secrets.json
+*.pem
+*.key
+
+# ===============================
+# PYTHON
+# ===============================
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# ===============================
+# VIRTUAL ENVIRONMENTS
+# ===============================
+venv/
+.venv/
+env/
+ENV/
+
+# ===============================
+# LOG FILES
+# ===============================
+*.log
+logs/
+
+# ===============================
+# DATABASE FILES
+# ===============================
+*.sqlite3
+*.db
+
+# ===============================
+# CACHE
+# ===============================
+.cache/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+
+# ===============================
+# APPWRITE LOCAL CONFIG
+# ===============================
+.appwrite/
